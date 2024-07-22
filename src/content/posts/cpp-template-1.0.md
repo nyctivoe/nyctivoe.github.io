@@ -14,7 +14,8 @@ draft: false
 - Fast read
 - Fileio macro
 - Redefined max and min
-- Fast pow function for a <img src="https://latex.codecogs.com/svg.image?\log_{2}(n)" title="\log_{2}(n)" /> time complexity
+- Definied mod to be 1000000007
+- Fast pow function for a $\log_{2}(V)$ time complexity and builtin mod
 - Custom definitions:
   - First -> fi
   - Second -> se

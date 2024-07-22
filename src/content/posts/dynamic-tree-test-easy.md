@@ -20,7 +20,7 @@ There is a tree with `n` nodes (rooted at a given node) and we are given `m` ope
 4. **Query** the minimum vertex weight on the path from `x` to `y` (inclusive).
 5. **Query** the maximum vertex weight on the path from `x` to `y` (inclusive).
 6. **Query** the sum of vertex weights on the path from `x` to `y` (inclusive).
-7. **Cut** the node `x` from its parent (if it have one) and **link** it to node `y`. If y is with the subtree of `x`, then don't link `x` to `y` and link `x` to its parent back.
+7. **Cut** the node `x` from its parent (if it have one) and **link** it to node `y`. If `y` is with the subtree of `x`, then don't link `x` to `y` and link `x` to its parent back.
 8. **Query** find the lowest common ancester of node `x` and `y` (with the root taken into account).
 
 ## Solution
