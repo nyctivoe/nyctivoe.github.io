@@ -11,7 +11,7 @@ draft: false
 
 # Introduction
 Treap is a type of self balancing binary search tree. Treap satisifies properties of a binary search tree and heap, as the name indicates. 
-:::note
+:::note[Properties]
 - Property of binary search tree: For any node, its `value` is less than its right son node and more than its left son node.
 - Property of heap: For any node, its `value` is less/greater (min-heap/max-heap) than the `value` of its parent node. We will assume min-heap in the rest of this blog.
 :::
