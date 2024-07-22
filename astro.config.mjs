@@ -60,15 +60,15 @@ export default defineConfig({
     sitemap(),
   ],
   markdown: {
-    remarkPlugins: [
+    remarkPlugins: [  
       remarkMath,
       remarkReadingTime,
       remarkGithubAdmonitionsToDirectives,
       remarkDirective,
       parseDirectiveNode,
     ],
-    rehypePlugins: [
-      rehypeKatex,
+    rehypePlugins: [ 
+      [rehypeKatex, { strict: false }],
       rehypeSlug,
       [
         rehypeComponents,
