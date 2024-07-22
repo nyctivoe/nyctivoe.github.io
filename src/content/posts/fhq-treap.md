@@ -47,6 +47,8 @@ Finally, update the information that needs to be maintained in the problem (push
 
 After knowing how to split using index, it's also trivial to reimplement the split function to split using value (Assuming the treap is properly inserted into the treap with value).
 
+Overall time complexity -> $\log_{2}(n)$
+
 ## Merge
 
 #### Sample Code
@@ -72,7 +74,9 @@ Because the two treaps are already ordered, when merging, we only need to consid
 
 At the same time, we need to maintain the properties of the search tree. Therefore, if the root node of `x` has a smaller `priority` than that of `y`, then `x` becomes the new root, and `y`, having larger values, should merge with the right subtree of `x`. Conversely, if `y` has a smaller `priority`, then `y` becomes the new root, and `x`, having smaller values, should merge with the left subtree of `y`.
 
-# Full Implementation of FHQ Treap
+Overall time complexity -> <img src="https://latex.codecogs.com/svg.image?\log_{2}(n)" title="\log_{2}(n)" />
+
+# Full Implementation
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
