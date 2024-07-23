@@ -9,4 +9,4 @@ draft: false
 ---
 
 # What is Link Cut Tree (LCT)
-Link cut tree is a data structure that can dynamically maintain a forest
+Link cut tree is a dynamic tree data structure. Like what it sounds, it can dynamically maintain a tree. 
