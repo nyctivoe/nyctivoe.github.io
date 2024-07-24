@@ -44,8 +44,8 @@ In the second line output the number of left over books.
 
 | Subtask #  | Score  | Bounds |
 | :----:     | :----: | :---- |
-| _1_ | 50     | $n, m \leq 100$ |
-| _2_ | 50     | $n, m \leq 10^{18}$ |
+| _1_ | 50   | $n, m \leq 100$ |
+| _2_ | 50   | $n, m \leq 10^{18}$ |
 
 ---
 
@@ -85,8 +85,8 @@ Good substrings of `S` includes: `ab` and `abab` .
 
 | Subtask #  | Score  | Bounds |
 | :----:     | :----: | :---- |
-| _1_ | 50     | $\|S\| \leq 500$ |
-| _2_ | 50     | $\|S\| \leq 5000$ |
+| _1_ | 50   | $\|S\| \leq 500$ |
+| _2_ | 50   | $\|S\| \leq 5000$ |
 
 <br>
 
