@@ -113,7 +113,7 @@ Now we realize there are multiple colors, and we have maintain a segment like su
 - When inserting a node of color `c`, we update the diameter at leaf node as $(i, i)$ where `i` is the index of the vertex. Then we maintain from the leaf node to the root.
 - When deleting a node of color `c` from the segment tree, we can treat it as an update of $(-1, -1)$ (effectly reseting the node). Then we maintain from the leaf node to the root.
 
-The final time complexity is $O\log_2n$ update and $O(1)$ query (because we only need the pair at root node). 
+The final time complexity is $O(\log_2n)$ update and $O(1)$ query (because we only need the pair at root node). 
 The final space complxity is around $40n$.
 
 **Implementation:**
