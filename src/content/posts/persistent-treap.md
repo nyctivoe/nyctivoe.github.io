@@ -22,7 +22,7 @@ const ll N = 2e5 + 5;
 int rts[N];
 mt19937 _rand = mt19937(114514);
 struct node {
-    int l, r, rnd, sz, lzrev; // lz add
+    int l, r, rnd, sz, lzrev;
     ll val, sum;
     node() : l(0), r(0), val(0), rnd(0), sz(0), sum(0), lzrev(0){}
     node(int _l, int _r, int _val, int _rnd, int _sz, int _sum)
