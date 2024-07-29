@@ -3,7 +3,7 @@ title: MCMF Template
 published: 2024-07-29
 description: 'MCMF Template Cpp'
 image: ''
-tags: [mcmf, template]
+tags: [MCMF, Template]
 category: 'Template'
 draft: false 
 ---
