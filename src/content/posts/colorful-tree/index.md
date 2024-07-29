@@ -1,5 +1,5 @@
 ---
-title: qoj Colorful Tree
+title: qoj - Colorful Tree
 published: 2024-07-24
 description: 'Observations and Segment Trees'
 image: ''

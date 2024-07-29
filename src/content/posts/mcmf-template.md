@@ -8,10 +8,10 @@ category: 'Template'
 draft: false 
 ---
 
-Sample Problem:
+## Sample Problems:
 - loj 2003
 
-## Min Cost Max Flow template
+## Min Cost Max Flow Template
 ```cpp
 namespace mcmf {
     struct Edge {
