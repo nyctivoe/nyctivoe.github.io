@@ -3,7 +3,7 @@ title: ICPC 2021 - Colorful Tree
 published: 2024-07-24
 description: 'Tutorial for ICPC 2021 Asia Macau Problem J. Colorful Tree'
 image: ''
-tags: [ICPC, Graph Theory, Segment Tree]
+tags: [Graph Theory, Euler Tour, Sparse Table, LCA, Segment Tree]
 category: 'ICPC'
 draft: false
 ---
