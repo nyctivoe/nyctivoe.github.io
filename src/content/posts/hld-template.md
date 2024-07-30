@@ -3,7 +3,7 @@ title: HLD Template
 published: 2024-07-29
 description: 'A template for heavy light decomp w/ LCA'
 image: ''
-tags: [HLD, Template]
+tags: [HLD]
 category: 'Template'
 draft: false 
 ---

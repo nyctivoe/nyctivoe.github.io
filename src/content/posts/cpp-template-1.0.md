@@ -3,7 +3,7 @@ title:  C++ Basic Template 1.0
 published: 2024-07-19
 description: ''
 image: ''
-tags: [Template]
+tags: [C++]
 category: 'Template'
 draft: false 
 ---

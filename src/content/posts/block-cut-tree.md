@@ -3,7 +3,7 @@ title: Block-Cut Tree Template
 published: 2024-07-29
 description: 'Template for Block-Cut Tree'
 image: ''
-tags: [Block Cut Tree, Template]
+tags: [Block Cut Tree]
 category: 'Template'
 draft: false 
 ---

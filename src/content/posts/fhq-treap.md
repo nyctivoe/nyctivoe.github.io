@@ -1,10 +1,10 @@
 ---
-title: FHQ Treap
+title: FHQ Treap Template
 published: 2024-07-21
 description: 'Tutorial for treap and fhq treap'
 image: ''
-tags: [Data Structure, Treap]
-category: 'Data Structure'
+tags: [Treap]
+category: 'Template'
 draft: false 
 ---
 

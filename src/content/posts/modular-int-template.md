@@ -3,7 +3,7 @@ title: Modular int Template
 published: 2024-07-22
 description: ''
 image: ''
-tags: [Template]
+tags: [Modular Int]
 category: 'Template'
 draft: false 
 ---

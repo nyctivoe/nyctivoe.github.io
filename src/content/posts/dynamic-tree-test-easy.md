@@ -3,7 +3,7 @@ title: dmoj - dynamic tree test (easy)
 published: 2024-07-21
 description: 'A LCT template problem'
 image: ''
-tags: [dmoj, Dynamic Tree, LCT, Data Structure]
+tags: [LCT, Dynamic Tree]
 category: 'dmoj'
 draft: false 
 ---

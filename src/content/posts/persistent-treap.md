@@ -1,14 +1,12 @@
 ---
-title: Persistent Treap
+title: Persistent Treap Template
 published: 2024-07-26
-description: 'Tutorial for Persistent Treap'
+description: 'Persistent Treap Template'
 image: ''
-tags: [Persistent Data Structure, Persistent Treap]
-category: 'Data Structure'
+tags: [Persistent Treap]
+category: 'Template'
 draft: false 
 ---
-
-
 
 # Full Implementation
 ```cpp
