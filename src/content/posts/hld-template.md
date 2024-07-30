@@ -1,9 +1,9 @@
 ---
-title: Heavy Light Decomposition Template
+title: HLD Template
 published: 2024-07-29
 description: 'A template for heavy light decomp w/ LCA'
 image: ''
-tags: [Heavy Light Decomposition, Template, Tree]
+tags: [HLD, Template]
 category: 'Template'
 draft: false 
 ---

@@ -1,10 +1,10 @@
 ---
-title: qoj - Colorful Tree
+title: ICPC 2021 - Colorful Tree
 published: 2024-07-24
-description: 'Observations and Segment Trees'
+description: 'Tutorial for ICPC 2021 Asia Macau Problem J. Colorful Tree'
 image: ''
-tags: [qoj, Graph Theory, Segment Tree]
-category: 'qoj'
+tags: [ICPC, Graph Theory, Segment Tree]
+category: 'ICPC'
 draft: false
 ---
 
