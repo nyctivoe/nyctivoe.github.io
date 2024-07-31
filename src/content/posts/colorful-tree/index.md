@@ -198,11 +198,11 @@ namespace colors {
 
 After being able to dynamically maintain the diameter for each color, we have to think about how to satisfy the **'different color'** requirement. We realize that Lemma 1 in the previous section also kindof works, but only for the same colored pairs. So we consider also using segment tree (but just a regular one this time, since we only need one). We also need different colored node pairs. So, in each node of the segment tree, we will maintain two pairs of nodes (two diameters). But how do we maintain?
 
-Let's set the point that we are trying to maintain be `p`, and its left son and right son to be `ls` and `rs` respectively (realistically $ls = p \times 2$ and $rs = p \times 2 + 1$). Let the most optimial pair of `ls` be $(lss_a, lss_b)$ and the most optimal pair of `rs` be $(rss_a, rss_b)$. Let the different colored pair of `ls` be $(lsd_a, lsd_b)$ and the different colored pait of `rs` be $(rsd_a, rsd_b)$. Then we can check between the 4 possible combinations of the same color pair of `ls` and `rs`, with the already existing different colored pairs (`lsd` and `rsd`). Now we will have the different colored pair for `p`. As for the same colored pair, we can just pick the bigger one out of `lss` and `rss`.
-
+Let's set the point that we are trying to maintain be `p`, and its left son and right son to be `ls` and `rs` respectively (realistically $ls = p \times 2$ and $rs = p \times 2 + 1$). Let the most optimial pair of `ls` be $(lss_a, lss_b)$ and the most optimal pair of `rs` be $(rss_a, rss_b)$. Let the different colored pair of `ls` be $(lsd_a, lsd_b)$ and the different colored pait of `rs` be $(rsd_a, rsd_b)$. Then we can check between the 4 possible combinations of the same color pair of `ls` and `rs`, with the already existing different colored pairs (`lsd` and `rsd`). Now we will have the different colored pair for `p`. As for the same colored pair, we can just pick the bigger one out of `lss` and `rss`.?|
++}"++++"?
 This proposed solution should work, but I was too dumb to realize that it was a thing. So instead, I stored the most optimal same colored pair and most optimal different colored pair. Then I bruteforced all possible combinations.
 
-My solution works but at the cost of must higher constant.
+My solution works but at the cost of much higher constant.
 
 The final time complexity is $O\log_2n$ for update and $O(1)$ for querying the root node.
 The final space complexity is around $4n$
