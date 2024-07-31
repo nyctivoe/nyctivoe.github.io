@@ -60,14 +60,14 @@ export default defineConfig({
     sitemap(),
   ],
   markdown: {
-    remarkPlugins: [  
+    remarkPlugins: [
       remarkMath,
       remarkReadingTime,
       remarkGithubAdmonitionsToDirectives,
       remarkDirective,
       parseDirectiveNode,
     ],
-    rehypePlugins: [ 
+    rehypePlugins: [
       [rehypeKatex, { strict: false }],
       rehypeSlug,
       [
