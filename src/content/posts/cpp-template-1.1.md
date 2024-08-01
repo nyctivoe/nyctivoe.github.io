@@ -8,7 +8,7 @@ category: 'Template'
 draft: false 
 ---
 
-This is a newer template without much difference to the previous one. One slight change it to replace all `int64_t` to `long long`. Since sometimes `int64_t` is interpretted as `long` instead of `long long`.
+This is a newer template without much difference to the previous one. One slight change it to replace all `int64_t` to `long long`.
 
 ```cpp
 // Eating, bathing, having a girlfriend, having an active social life is incidental, it gets in the way of code time.
@@ -23,8 +23,7 @@ inline int read(char *s) { char ch = getchar(); int i = 1; while (ch == ' ' || c
 ll mod = 1e9 + 7;
 #define fi first
 #define se second
-inline ll min(ll a, ll b) { return a < b ? a : b; } inline ll max(ll a, ll b) { return a > b ? a : b; }
-ll fpow(ll a, ll b, ll md, ll cur = 1) { while (b) { { if (b % 2 == 1) cur *= a; } a *= a, b = b / 2, a %= md, cur %= md; } return cur % md; }
+inline ll fpow(ll a, ll b, ll md, ll cur = 1) { while (b) { { if (b % 2 == 1) cur *= a; } a *= a, b = b / 2, a %= md, cur %= md; } return cur % md; }
 /************************************/
 
 
