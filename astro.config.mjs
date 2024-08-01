@@ -17,7 +17,7 @@ import { AdmonitionComponent } from './src/plugins/rehype-component-admonition.m
 import { GithubCardComponent } from './src/plugins/rehype-component-github-card.mjs';
 import { parseDirectiveNode } from './src/plugins/remark-directive-rehype.js';
 import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs';
-import partytown from "@astrojs/partytown";
+import partytown from '@astrojs/partytown'
 
 const oklchToHex = str => {
   const DEFAULT_HUE = 250;
@@ -28,7 +28,6 @@ const oklchToHex = str => {
     format: 'hex'
   });
 };
-
 
 // https://astro.build/config
 export default defineConfig({
@@ -111,5 +110,5 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
 });
