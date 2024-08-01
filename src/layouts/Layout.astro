@@ -75,6 +75,18 @@ const siteLang = siteConfig.lang.replace('_', '-')
 <!DOCTYPE html>
 <html lang={siteLang} isHome={isHomePage} pathname={testPathName} class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]">
 	<head>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CK89K6XZCL"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-CK89K6XZCL');
+		</script>
+
+
 		<title>{pageTitle}</title>
 
 		<meta charset="UTF-8" />
