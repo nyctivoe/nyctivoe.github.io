@@ -1,9 +1,9 @@
 ---
-title:  C++ Basic Template 1.0
+title:  Cpp Basic Template 1.0
 published: 2024-07-19
 description: ''
 image: ''
-tags: [C++]
+tags: [Cpp]
 category: 'Template'
 draft: false 
 ---
