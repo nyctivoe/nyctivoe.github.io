@@ -30,6 +30,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.12.3(@types/node@22.0.2)(lightningcss@1.25.1)(sass@1.77.8)(stylus@0.63.0)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7)
+      '@astrolib/analytics':
+        specifier: ^0.5.0
+        version: 0.5.0(astro@4.12.3(@types/node@22.0.2)(lightningcss@1.25.1)(sass@1.77.8)(stylus@0.63.0)(terser@5.31.3)(typescript@5.5.4))
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.0.21
         version: 5.0.21
@@ -42,6 +45,9 @@ importers:
       astro:
         specifier: ^4.12.3
         version: 4.12.3(@types/node@22.0.2)(lightningcss@1.25.1)(sass@1.77.8)(stylus@0.63.0)(terser@5.31.3)(typescript@5.5.4)
+      astro-analytics:
+        specifier: ^2.7.0
+        version: 2.7.0
       astro-compress:
         specifier: ^2.3.0
         version: 2.3.0(@types/node@22.0.2)(sass@1.77.8)(stylus@0.63.0)(typescript@5.5.4)
@@ -234,6 +240,11 @@ packages:
 
   '@astrojs/ts-plugin@1.9.1':
     resolution: {integrity: sha512-Rijik6fzJAIAqK9+4iNm+b4TFk82HwEVtK+U5z3XJQJKet8vRQI8V2L27D4jXLjSpsKHvV+rmGlqQOOyXaucgg==}
+
+  '@astrolib/analytics@0.5.0':
+    resolution: {integrity: sha512-NlTFTUtsjVEAb2ZzYXZ5XBvak7JH3ixaQTq5r+q5PZtealHajUSPzaY1UrcJOJDJrOFHf5pvxBnYmCEzE9fIjw==}
+    peerDependencies:
+      astro: ^1.2.1 || ^2.0.0 || ^3.0.0-beta.0 || ^3.0.0 || ^4.0.0
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -1757,6 +1768,9 @@ packages:
   arraybuffer.prototype.slice@1.0.3:
     resolution: {integrity: sha512-bMxMKAjg13EBSVscxTaYA4mRc5t1UAXa2kXiGTNfZ079HIWXEkKmkgFrh/nJqamaLSrXO5H4WFFkPEaLJWbs3A==}
     engines: {node: '>= 0.4'}
+
+  astro-analytics@2.7.0:
+    resolution: {integrity: sha512-/qctBn7LF9DS3ff2YYFrYtCkLLw2fboPDJUgg3HErygGbEBvebW/eGRftZH4ykDJhlCvwTsSEKz/vff7WllyAw==}
 
   astro-compress@2.3.0:
     resolution: {integrity: sha512-7JkIgQyngmWnRnjVkOcPHelVIi9/4RXGAy68wmsIBREpfKsBCAIVnyF9riBaahkL6rqiGEecyFDUBk6aW9qIew==}
@@ -4849,6 +4863,10 @@ snapshots:
       semver: 7.6.3
       vscode-languageserver-textdocument: 1.0.12
 
+  '@astrolib/analytics@0.5.0(astro@4.12.3(@types/node@22.0.2)(lightningcss@1.25.1)(sass@1.77.8)(stylus@0.63.0)(terser@5.31.3)(typescript@5.5.4))':
+    dependencies:
+      astro: 4.12.3(@types/node@22.0.2)(lightningcss@1.25.1)(sass@1.77.8)(stylus@0.63.0)(terser@5.31.3)(typescript@5.5.4)
+
   '@babel/code-frame@7.24.7':
     dependencies:
       '@babel/highlight': 7.24.7
@@ -6534,6 +6552,8 @@ snapshots:
       get-intrinsic: 1.2.4
       is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.3
+
+  astro-analytics@2.7.0: {}
 
   astro-compress@2.3.0(@types/node@22.0.2)(sass@1.77.8)(stylus@0.63.0)(typescript@5.5.4):
     dependencies:

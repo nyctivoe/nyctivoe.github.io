@@ -12,7 +12,7 @@ import {Favicon} from "../types/config";
 import {defaultFavicons} from "../constants/icon";
 import {LIGHT_MODE, DARK_MODE, AUTO_MODE, DEFAULT_THEME} from "../constants/constants";
 import {url} from "../utils/url-utils";
-import GoogleAnalytics from '../components/GoogleAnalytics.astro'
+import Analytics from '../components/Analytics.astro';
 
 interface Props {
 	title: string;
@@ -77,8 +77,7 @@ const siteLang = siteConfig.lang.replace('_', '-')
 <html lang={siteLang} isHome={isHomePage} pathname={testPathName} class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]">
 	<head>
 		<!-- Google tag (gtag.js) -->
-		<GoogleAnalytics />
-
+		<Analytics />
 		<title>{pageTitle}</title>
 
 		<meta charset="UTF-8" />

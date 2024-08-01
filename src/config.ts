@@ -59,6 +59,16 @@ export const profileConfig: ProfileConfig = {
   ],
 }
 
+export const ANALYTICS = {
+  vendors: {
+    googleAnalytics: {
+      id: 'G-K8VWCTQ74S', // Replace with your actual tracking ID
+      partytown: true, // Set to true if you want to use Partytown for offloading scripts
+    },
+    // Add other analytics vendors if needed
+  },
+};
+
 export const licenseConfig: LicenseConfig = {
   enable: false,
   name: 'CC BY-NC-SA 4.0',

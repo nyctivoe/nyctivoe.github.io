@@ -1,3 +1,4 @@
+import partytown from "@astrojs/partytown";
 import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
 import tailwind from '@astrojs/tailwind';
@@ -17,7 +18,7 @@ import { AdmonitionComponent } from './src/plugins/rehype-component-admonition.m
 import { GithubCardComponent } from './src/plugins/rehype-component-github-card.mjs';
 import { parseDirectiveNode } from './src/plugins/remark-directive-rehype.js';
 import { remarkReadingTime } from './src/plugins/remark-reading-time.mjs';
-import partytown from "@astrojs/partytown";
+
 const oklchToHex = str => {
   const DEFAULT_HUE = 250;
   const regex = /-?\d+(\.\d+)?/g;
@@ -52,7 +53,9 @@ export default defineConfig({
     }
   }), Compress({
     Image: false
-  }), svelte(), sitemap(), partytown()],
+  }), svelte(), sitemap(), partytown({
+    config: { forward: ['dataLayer.push'] },
+  })],
   markdown: {
     remarkPlugins: [remarkMath, remarkReadingTime, remarkGithubAdmonitionsToDirectives, remarkDirective, parseDirectiveNode],
     rehypePlugins: [[rehypeKatex, {
