@@ -12,7 +12,6 @@ import {Favicon} from "../types/config";
 import {defaultFavicons} from "../constants/icon";
 import {LIGHT_MODE, DARK_MODE, AUTO_MODE, DEFAULT_THEME} from "../constants/constants";
 import {url} from "../utils/url-utils";
-import Analytics from '../components/Analytics.astro';
 
 interface Props {
 	title: string;
@@ -76,8 +75,21 @@ const siteLang = siteConfig.lang.replace('_', '-')
 <!DOCTYPE html>
 <html lang={siteLang} isHome={isHomePage} pathname={testPathName} class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<Analytics />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+		type="text/partytown"
+		async
+		src="https://www.googletagmanager.com/gtag/js?id=G-K8VWCTQ74S"
+		></script>
+		<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			window.dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "G-K8VWCTQ74S");
+		</script>
+
 		<title>{pageTitle}</title>
 
 		<meta charset="UTF-8" />

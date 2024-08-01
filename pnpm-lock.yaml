@@ -15,9 +15,6 @@ importers:
       '@astrojs/check':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.5.4)
-      '@astrojs/partytown':
-        specifier: ^2.1.1
-        version: 2.1.1
       '@astrojs/rss':
         specifier: ^4.0.7
         version: 4.0.7
@@ -115,6 +112,9 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
     devDependencies:
+      '@astrojs/partytown':
+        specifier: ^2.1.1
+        version: 2.1.1
       '@astrojs/ts-plugin':
         specifier: ^1.9.1
         version: 1.9.1
