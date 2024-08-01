@@ -1,5 +1,5 @@
 ---
-title: NOI 2017 - 整数
+title: NOI 2017 - 整数 (Integer)
 published: 2024-08-01
 description: ''
 image: ''
