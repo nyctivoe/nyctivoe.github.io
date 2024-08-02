@@ -8,6 +8,8 @@ category: 'NOI'
 draft: false 
 ---
 
+<a href="https://loj.ac/p/2302" target="_blank"> Problem Link </a>
+
 ## Observation
 
 We can startoff directly with a naive $O(n\log_{n}^2)$ solution with bit carrying. This doesn't seem to pass. However, we can add a few $cheese$ to it. 
