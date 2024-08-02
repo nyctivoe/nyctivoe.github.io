@@ -20,7 +20,7 @@ draft: false
 
 ## Solution:
 
-- We reallize that we can use hashing to compare the two arrays. 
+- We realize that we can use hashing to compare the two arrays. 
 - One naturual thing to think about is definitely mo's, which amortizes our queries into a sqrt. Therefore giving us a $O(n\sqrt{q})$ solution. However this doesn't pass, so we need to think about something better.
 - In order to proceed, we have to realize observation #3. This observation leads us to a two pointer solution, which have a time complexity of $O(n + q)$, enough to pass this problem.
 

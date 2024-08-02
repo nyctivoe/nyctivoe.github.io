@@ -1,5 +1,5 @@
 ---
-title: NOI 2024 - 百万富翁 (Millionnaire)
+title: NOI 2024 - 百万富翁 (Millionaire)
 published: 2024-08-02
 description: ''
 image: ''
