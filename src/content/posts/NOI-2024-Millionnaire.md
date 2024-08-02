@@ -208,8 +208,7 @@ int sz[N];
 vector<int> qry1, qry2, ans, lst;
 inline void calc(vector<int> blk) {
     qry1.clear(); qry2.clear();
-    static int pos;
-    pos = 0;
+    int pos = 0;
     for (int i : blk) {
         for (int j = pos; j < pos + i; j++)
             for (int k = pos; k < j; k++)
@@ -220,8 +219,8 @@ inline void calc(vector<int> blk) {
     for (int i : lst)
         sz[i] = 0;
     ans.clear();
-    static int cnt;
-    cnt = pos = 0;
+    int cnt = 0;
+    pos = 0;
     for (int i : blk) {
         for (int j = pos; j < pos + i; j++)
             for (int k = pos; k < j; k++)
@@ -273,15 +272,15 @@ int richest(int n, int t, int s) {
         calc(bsz);
         bsz.clear();
 
-        for (int i = 0; i < 178; i++) // tweaked here
+        for (int i = 0; i < 178; i++)
             bsz.push_back(19);
-        for (int i = 0; i < 5; i++) // + here
+        for (int i = 0; i < 5; i++)
             bsz.push_back(18);
         calc(bsz);
         bsz.clear();
 
-        bsz.push_back(183); // + here
-        calc(bsz); 
+        bsz.push_back(183);
+        calc(bsz);
         return lst.front();
     }
 }
