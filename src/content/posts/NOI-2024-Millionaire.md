@@ -8,6 +8,8 @@ category: 'NOI'
 draft: false 
 ---
 
+<a href="https://qoj.ac/contest/1747/problem/9156" target="_blank"> Problem Link </a>
+
 ## Observations:
 
 - It's quite simple to tell that brute force is very easy, just ask every pair and then return the one have it greater than the other person it's comparing to $n - 1$ times.
