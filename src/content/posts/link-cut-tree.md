@@ -4,7 +4,7 @@ published: 2024-07-20
 description: 'Tutotial for link cut tree'
 image: ''
 tags: [LCT, Dynamic Tree]
-category: 'LCT'
+category: 'Template'
 draft: false 
 ---
 
