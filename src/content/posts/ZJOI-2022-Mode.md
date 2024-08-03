@@ -1,7 +1,7 @@
 ---
 title: ZJOI 2022 - Mode
 published: 2024-07-31
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Sqrt Decomposition, Prefix Sum]
 category: 'ZJOI'

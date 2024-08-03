@@ -1,7 +1,7 @@
 ---
 title: NOI 2017 - 蚯蚓排队 (queue)
 published: 2024-07-31
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Hash Map, Brute Force]
 category: 'NOI'

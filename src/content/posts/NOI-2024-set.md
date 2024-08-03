@@ -1,7 +1,7 @@
 ---
 title: NOI 2024 - 集合 (set)
 published: 2024-08-02
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Hashing, Two Pointers]
 category: 'NOI'

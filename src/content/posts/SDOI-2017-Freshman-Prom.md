@@ -1,7 +1,7 @@
 ---
 title: SDOI 2017 - 新生舞会 (Freshman Prom)
 published: 2024-07-29
-description: ''
+description: 'Editorial'
 image: ''
 tags: [MCMF, Binary Serach, Fractional Programming]
 category: 'SDOI'

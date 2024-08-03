@@ -1,7 +1,7 @@
 ---
 title: NOI 2013 - Calligraphy
 published: 2024-07-30
-description: ''
+description: 'Editorial'
 image: ''
 tags: [DP, Prefix Sum, Brute Force]
 category: 'NOI'
@@ -14,7 +14,7 @@ draft: false
 
 - The ranges are really small, so is there some bruteforce problem?
 - Oh right, we can do dp and bruteforcly maintain the dp states with transitions.
-  - But this is too slow naivly, we need to optimize some summations with prefix sum.
+  - But this is too slow naively, we need to optimize some summations with prefix sum.
 
 ## Solution:
 
@@ -37,7 +37,7 @@ int trans1 = -inf, trans2 = -inf; // initialized
 
 After having these dp states, we need to figure out transitions. We can view the transitions as one massive simulation. Because I'm lazy and don't want to write out all transitions, refer to my code for them (or check out this blog by n685: [n685's blog](https://nhuang685.github.io/noi/dp/2024/07/30/noi2013-calligraphy.html). $orz$ ). The simulation should be simple to understand. 
 
-**Note:** In the process of transitioning, we do need to find the sum of grids on the same column. Naivly adding them in the transition is too slow, so we just build a prefix sum array for each column and use that.
+**Note:** In the process of transitioning, we do need to find the sum of grids on the same column. naively adding them in the transition is too slow, so we just build a prefix sum array for each column and use that.
 
 ## Full Implementation
 ```cpp

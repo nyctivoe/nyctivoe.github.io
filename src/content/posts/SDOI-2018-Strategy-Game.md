@@ -1,7 +1,7 @@
 ---
 title: SDOI 2018 - 战略游戏 (Strategy Game)
 published: 2024-07-29
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Block Cut Tree, LCA]
 category: 'SDOI'

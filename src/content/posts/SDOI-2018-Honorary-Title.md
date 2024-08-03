@@ -1,7 +1,7 @@
 ---
 title: SDOI 2018 - 荣誉称号 (Honorary Title)
 published: 2024-07-29
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Tree DP]
 category: 'SDOI'

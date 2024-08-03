@@ -1,7 +1,7 @@
 ---
 title: NOI 2016 - Interval
 published: 2024-07-30
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Coordinate Compression, Segment Tree, Lazy Propagation]
 category: 'NOI'

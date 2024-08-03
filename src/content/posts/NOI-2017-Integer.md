@@ -1,7 +1,7 @@
 ---
 title: NOI 2017 - 整数 (Integer)
 published: 2024-08-01
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Brute Force, Map, Cheese]
 category: 'NOI'
@@ -16,7 +16,7 @@ We can startoff directly with a naive $O(n\log_{n}^2)$ solution with bit carryin
 
 ## Solution
 
-First we realize that we can store all of the bits within a map. Also, we can maintain -1 in the bits as well. Therefore, whenever we query, we can just simply check the previous bit for a carry. We can update the map naivly using a while loop that decomposes $a$.
+First we realize that we can store all of the bits within a map. Also, we can maintain -1 in the bits as well. Therefore, whenever we query, we can just simply check the previous bit for a carry. We can update the map naively using a while loop that decomposes $a$.
 
 ## Full Implementation
 

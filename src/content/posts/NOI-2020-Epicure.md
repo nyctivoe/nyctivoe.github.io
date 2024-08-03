@@ -1,7 +1,7 @@
 ---
 title: NOI 2020 - Epicure
 published: 2024-07-31
-description: ''
+description: 'Editorial'
 image: ''
 tags: [Binary Lifting, Floyd]
 category: 'NOI'
