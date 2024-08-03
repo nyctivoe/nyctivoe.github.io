@@ -13,7 +13,7 @@ draft: false
 ## Observations:
 
 1. I think for this problem, the most important thing is to understand what the problem statement is essentially saying. 
-2. After understanding the problem statement, we realize that the numbers themselves are important only within their repsective array. This is because when comparing array `a` and `b`, we really only care about the position. Then how do we comapre the positions quickly and update quickly? Hashing!
+2. After understanding the problem statement, we realize that the numbers themselves are important only within their repsective array. This is because when comparing array `a` and `b`, we really only care about the position. Then how do we compare the positions quickly and update quickly? Hashing!
 3. Another quick observation is that how this the problem works:
   - For example, if a range $[l, r]$ work, then surely $[l + 1, r]$ works.
   - If $[l, r]$ doesn't work, then surely $[l, r + 1]$ won't work either.
