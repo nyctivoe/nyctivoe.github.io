@@ -44,7 +44,7 @@ namespace st1 {
 }
 ```
 
-Then we can think about subtask 2 solution. Inspired by the divide and conquer, we can fire write a solution that does the deepest layer and then iterate upwards. This can to $11$ more points if you use 3 as block size (I tried in virtual). However, we soon realize that why do we have to keep on solving for one block size. Why don't we have something like 2 at the beginning and then some larger numbers later. 
+Then we can think about subtask 2 solution. Inspired by the divide and conquer, we can first write a solution that does the deepest layer and then iterate upwards. This can to $11$ more points if you use 3 as block size (I tried in virtual). However, we soon realize that why do we have to keep on solving for one block size. Why don't we have something like 2 at the beginning and then some larger numbers later. 
 
 The optimal block sizes can be figured out with a `dp` or `dfs`, but I didn't do that. I first set the first few small numbers and then randomly tested for the last few numbers. Which arrived at this 84 point solution:
 
