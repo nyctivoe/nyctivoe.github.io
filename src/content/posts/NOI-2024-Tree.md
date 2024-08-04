@@ -58,7 +58,7 @@ We maintain a queue of "pending" edges. The goal is to ensure that after determi
 - There is exactly one edge along the path from $a_i$ to $b_i$ with an undetermined orientation.
 - All other edges along the path from $a_i$ to $b_i$ have orientations that match the direction of the path from $a_i$ to $b_i$.
 
-We can imagine the step that we are doing as the step of shrinking the tree (like multiple points into 1). So then if (a, b) is right next to each other on the tree, shrink it and set b -> a. Otherwise, the first edge in lexicographically smallest orientation must have u to v (aka 0 / 1).
+We can imagine the step that we are doing as the step of shrinking the tree (like multiple points into 1). So then if (a, b) is right next to each other on the tree, shrink it and set b -> a. Otherwise, the first edge in lexicographically smallest orientation must have u to v.
 
 So we consider small to large merging: 
 - We need to consider every point (including the points that's the result of mergingg). So we can store all it's neighbouring points after the merging operation.
