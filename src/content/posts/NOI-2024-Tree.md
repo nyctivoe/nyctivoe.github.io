@@ -58,9 +58,19 @@ We maintain a queue of "pending" edges. The goal is to ensure that after determi
 - There is exactly one edge along the path from $a_i$ to $b_i$ with an undetermined orientation.
 - All other edges along the path from $a_i$ to $b_i$ have orientations that match the direction of the path from $a_i$ to $b_i$.
 
-There are a lot of ways to optimize this, I used small to large merging combined with DSU. I also used LCA with HLD, and Binary Indexed Tree to efficiently calculate and update the reversions.
+We can imagine the step that we are doing as the step of shrinking the tree (like multiple points into 1). So then if (a, b) is right next to each other on the tree, shrink it and set b -> a. Otherwise, the first edge in lexicographically smallest orientation must have u to v (aka 0).
 
-Please do be aware that these implementation have a very large constant. Especially my solution, it will require you to have a really good constant factor (or just submit it 10 times, surely one will pass).
+So we consider small to large merging: 
+- We need to consider every point (including the points that's the result of mergingg). So we can store all it's neighbouring points after the merging operation.
+
+**But How?**
+
+Suppose we merge (u, v), where the size represented by u is not less than that of v. So then, we can merge the information of v into the information of u.
+
+Plus, we need to check whether all point pairs (a, b) containing v are adjacent on the tree. 
+We also need to enumerate all adjacent points of v on the tree and determine if v needs to be merged with its adjacent points. It is difficult to 'delete' edges that have already met the conditions after each contraction of nodes. So we just replace it with: during the processing of each edge, use a union-find data structure to check if it can determine the orientation of an undetermined edge on the original tree
+
+Please do be aware that these implementation have a very large constant and my solution contains $O((\log_2{n})^2)$. It will require you to have a really good constant factor (or just submit it 10 times, surely one will pass).
 
 ## Full Implementation
 
