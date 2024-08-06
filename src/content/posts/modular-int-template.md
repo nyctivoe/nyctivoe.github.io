@@ -8,79 +8,38 @@ category: 'Template'
 draft: false 
 ---
 
-Features:
-
-- customizable mod, with Fp<1234567>, Fp<1000000007>, etc.
-- can be use directly with cin and cout.
-- builtint modular inverses
-- includes most basic operations and comparisions.
+Benq's Modint Template
 
 ```cpp
-template <ll MOD> struct Fp {
-    ll val;
-    constexpr Fp(ll v = 0) noexcept : val(v % MOD) {
-        if (val < 0)
-            val += MOD;
-    }
-    constexpr ll getmod() const { return MOD; }
-    constexpr Fp operator-() const noexcept { return val ? MOD - val : 0; }
-    constexpr Fp operator+(const Fp &r) const noexcept {
-        return Fp(*this) += r;
-    }
-    constexpr Fp operator-(const Fp &r) const noexcept {
-        return Fp(*this) -= r;
-    }
-    constexpr Fp operator*(const Fp &r) const noexcept {
-        return Fp(*this) *= r;
-    }
-    constexpr Fp operator/(const Fp &r) const noexcept {
-        return Fp(*this) /= r;
-    }
-    constexpr Fp &operator+=(const Fp &r) noexcept {
-        val += r.val;
-        if (val >= MOD)
-            val -= MOD;
-        return *this;
-    }
-    constexpr Fp &operator-=(const Fp &r) noexcept {
-        val -= r.val;
-        if (val < 0)
-            val += MOD;
-        return *this;
-    }
-    constexpr Fp &operator*=(const Fp &r) noexcept {
-        val = val * r.val % MOD;
-        return *this;
-    }
-    constexpr Fp &operator/=(const Fp &r) noexcept {
-        ll a = r.val, b = MOD, u = 1, v = 0;
-        while (b) {
-            ll t = a / b;
-            a -= t * b, swap(a, b);
-            u -= t * v, swap(u, v);
-        }
-        val = val * u % MOD;
-        if (val < 0)
-            val += MOD;
-        return *this;
-    }
-    constexpr bool operator==(const Fp &r) const noexcept {
-        return this->val == r.val;
-    }
-    constexpr bool operator!=(const Fp &r) const noexcept {
-        return this->val != r.val;
-    }
-    friend constexpr istream &operator>>(istream &is, Fp<MOD> &x) noexcept {
-        is >> x.val;
-        x.val %= MOD;
-        if (x.val < 0)
-            x.val += MOD;
-        return is;
-    }
-    friend constexpr ostream &operator<<(ostream &os, const Fp<MOD> &x) noexcept {
-        return os << x.val;
-    }
-};
+const int MOD = 1e9 + 7;
 
-using mint = Fp<1000000007>;
+struct mi {
+    int v;
+    explicit operator int() const { return v; }
+    mi() { v = 0; }
+    mi(long long _v) : v(_v % MOD) { v += (v < 0) * MOD; }
+};
+mi &operator+=(mi &a, mi b) {
+    if ((a.v += b.v) >= MOD)
+        a.v -= MOD;
+    return a;
+}
+mi &operator-=(mi &a, mi b) {
+    if ((a.v -= b.v) < 0)
+        a.v += MOD;
+    return a;
+}
+mi operator+(mi a, mi b) { return a += b; }
+mi operator-(mi a, mi b) { return a -= b; }
+mi operator*(mi a, mi b) { return mi((long long)a.v * b.v); }
+mi &operator*=(mi &a, mi b) { return a = a * b; }
+mi pow(mi a, long long p) {
+    assert(p >= 0);
+    return p == 0 ? 1 : pow(a * a, p / 2) * (p & 1 ? a : 1);
+}
+mi inv(mi a) {
+    assert(a.v != 0);
+    return pow(a, MOD - 2);
+}
+mi operator/(mi a, mi b) { return a * inv(b); }
 ```
