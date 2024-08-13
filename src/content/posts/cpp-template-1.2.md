@@ -1,10 +1,10 @@
 ---
-title: cpp-template-1.2
+title: Cpp Basic Template 1.2
 published: 2024-08-13
-description: ''
+description: 'A simplified template with debug file'
 image: ''
-tags: []
-category: ''
+tags: [Cpp]
+category: 'Template'
 draft: false 
 ---
 
