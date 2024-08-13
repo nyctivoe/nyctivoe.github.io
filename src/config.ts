@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
   favicon: [
     // Leave this array empty to use the default favicon
     {
-      src: '/favicon/code2.png', // Path of the favicon, relative to the /public directory
+      src: '/favicon/code.png', // Path of the favicon, relative to the /public directory
     },
   ],
 }
