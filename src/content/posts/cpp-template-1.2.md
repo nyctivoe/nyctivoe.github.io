@@ -47,7 +47,7 @@ signed main() {
     fastIO;
 #ifndef LOCAL
     // fileio("a");
-#else
+#endif
     
     int t = 1;
     cin >> t;
