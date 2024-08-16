@@ -50,7 +50,7 @@ signed main() {
 #endif
     
     int t = 1;
-    cin >> t;
+    // cin >> t;
     while(t--)
         solve();
 
