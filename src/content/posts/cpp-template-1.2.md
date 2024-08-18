@@ -16,7 +16,7 @@ A completely redrafted version of C++ Template, with seperate debug template pla
 using namespace std;
 /******************************************************************/
 #ifdef LOCAL
-#include <bits/debugg.h>
+#include <bits/ddebug.h>
 #else
 #define debug(...)
 #define debugArr(...)
