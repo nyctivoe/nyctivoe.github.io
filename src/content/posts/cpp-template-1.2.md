@@ -58,7 +58,7 @@ signed main() {
 }
 ```
 
-For the debug file to work, place it under the same directory as the `stdc++.h` file with the name `debugg.h` (I chose to put an extra `g` at the end to avoid any possible duplicate names).
+For the debug file to work, place it under the same directory as the `stdc++.h` file with the name `ddebug.h` (I chose to put an extra `g` at the end to avoid any possible duplicate names).
 
 ## Debug File
 ```cpp
