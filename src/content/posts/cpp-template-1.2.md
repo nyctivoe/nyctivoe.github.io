@@ -41,7 +41,7 @@ inline void solve() {
 
 signed main() {
     fastIO;
-#ifndef LOCAL
+#ifndef nyctivoe
     // fileio("a");
 #endif
     
