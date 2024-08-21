@@ -15,7 +15,7 @@ A completely redrafted version of C++ Template, with seperate debug template pla
 #include <bits/stdc++.h>
 using namespace std;
 /******************************************************************/
-#ifdef LOCAL
+#ifdef nyctivoe
 #include <bits/ddebug.h>
 #else
 #define debug(...)
