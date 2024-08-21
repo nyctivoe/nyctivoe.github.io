@@ -30,10 +30,6 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 typedef long double ld;
-typedef vector<int> vi;
-typedef vector<ll> vl;
-typedef vector<vector<int>> vvi;
-typedef vector<vector<ll>> vvl;
 #define eb emplace_back
 #define fi first
 #define se second
