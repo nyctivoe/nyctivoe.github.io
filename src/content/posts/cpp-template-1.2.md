@@ -26,22 +26,25 @@ using namespace std;
     freopen((string(x) + ".in").c_str(), "r", stdin),                                  \
         freopen((string(x) + ".out").c_str(), "w", stdout)
 #define fastIO ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-#define ll long long
-#define pii pair<int, int>
-#define pll pair<ll, ll>
+typedef long long ll;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+typedef long double ld;
 #define eb emplace_back
 #define fi first
 #define se second
-template<typename T>
-void read(T &x) { cin >> x;}
-template<typename T, typename... Args>
-void read(T &x, Args &...args) { cin >> x; read(args...);}
-template<typename T>
-T read() { T x; read(x); return x;}
+template <typename T> void read(T &x) { cin >> x; }
+template <typename T, typename... Args> void read(T &x, Args &...args) {
+    cin >> x, read(args...);
+}
+template <typename T> T read() {
+    T x;
+    return read(x), x;
+}
 /******************************************************************/
 
 inline void solve() {
-
+    
 }
 
 signed main() {
@@ -49,15 +52,14 @@ signed main() {
 #ifndef nyctivoe
     // fileio("a");
 #endif
-    
+
     int t = 1;
     // cin >> t;
-    while(t--)
+    while (t--)
         solve();
 
     return 0;
 }
-
 ```
 
 For the debug file to work, place it under the same directory as the `stdc++.h` file with the name `ddebug.h` (I chose to put an extra `d` at the end to avoid any possible duplicate names).
