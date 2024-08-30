@@ -33,6 +33,15 @@ typedef long double ld;
 #define eb emplace_back
 #define fi first
 #define se second
+template <typename T, int sz> array<T, sz> read(bool st) {
+    static array<T, sz> x;
+    if (st)
+        x[0] = 0;
+    for (int i = st; i <= sz - !st; i++)
+        cin >> x[i];
+    return x;
+}
+template <typename T> void read(pair<T, T> &x) { cin >> x.fi >> x.se; }
 template <typename T> void read(T &x) { cin >> x; }
 template <typename T, typename... Args> void read(T &x, Args &...args) {
     cin >> x, read(args...);
