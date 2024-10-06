@@ -22,9 +22,7 @@ using namespace std;
 #define debugArr(...)
 #endif
 /******************************************************************/
-#define fileio(x)                                                                      \
-    freopen((string(x) + ".in").c_str(), "r", stdin),                                  \
-        freopen((string(x) + ".out").c_str(), "w", stdout)
+#define fileio(x) freopen((string(x) + ".in").c_str(), "r", stdin), freopen((string(x) + ".out").c_str(), "w", stdout)
 #define fastIO ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 typedef long long ll;
 typedef pair<int, int> pii;
@@ -33,19 +31,18 @@ typedef long double ld;
 #define eb emplace_back
 #define fi first
 #define se second
-template <typename T, int sz> array<T, sz> read(bool st) {
+#define mkp make_pair
+template <typename T, int sz> inline array<T, sz> read(bool st) {
     static array<T, sz> x;
     x[0] = 0;
     for (int i = st; i <= sz - !st; i++)
         cin >> x[i];
     return x;
 }
-template <typename T> void read(pair<T, T> &x) { cin >> x.fi >> x.se; }
-template <typename T> void read(T &x) { cin >> x; }
-template <typename T, typename... Args> void read(T &x, Args &...args) {
-    cin >> x, read(args...);
-}
-template <typename T> T read() {
+template <typename T> inline void read(pair<T, T> &x) { cin >> x.fi >> x.se; }
+template <typename T> inline void read(T &x) { cin >> x; }
+template <typename T, typename... Args> inline void read(T &x, Args &... args) { cin >> x, read(args...); }
+template <typename T> inline T read() {
     T x;
     return read(x), x;
 }
