@@ -35,8 +35,7 @@ typedef long double ld;
 #define se second
 template <typename T, int sz> array<T, sz> read(bool st) {
     static array<T, sz> x;
-    if (st)
-        x[0] = 0;
+    x[0] = 0;
     for (int i = st; i <= sz - !st; i++)
         cin >> x[i];
     return x;
@@ -63,7 +62,7 @@ signed main() {
 #endif
 
     int t = 1;
-    // cin >> t;
+    // read(t);
     while (t--)
         solve();
 
